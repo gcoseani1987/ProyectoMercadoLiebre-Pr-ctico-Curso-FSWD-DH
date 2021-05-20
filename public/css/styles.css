@@ -1,0 +1,275 @@
+*{
+    font-family: 'Roboto',sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #EBEBEB;
+}
+.main-header{
+    background-color:#eac926;
+    padding: 20px;
+}
+.main-header-top{
+    background-color:#eac926;
+}
+.main-header img{
+    width: 200px;
+    background-color:#eac926;
+}
+.texto-header{
+    font-weight: 700;
+    text-align: center;
+    background-color:#eac926;
+}
+.texto-header i{
+    background-color:#eac926;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color:#eac926;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    font-weight: 600;
+    padding:5px 0;
+    font-size: 17px;
+    background-color:#eac926;
+}
+.main-navbar{
+    display: none;
+    background-color:#eac926;
+}
+.main-navbar i{
+    background-color:#eac926;
+}
+.bar{
+    margin-bottom: 17px;
+}
+.barra {
+    background-color: #eac926;
+}
+.buscador{
+    width: 300px;
+}
+body{
+    font-size: 12px;
+}
+.descuento{
+    font-size: 16px;
+    color:#39b54a;
+    font-weight: bold;
+    background-color: white;
+}
+.producto{
+    font-size: 16px;
+    background-color: white;
+    color: rgb(121, 118, 118);
+    font-weight: bold;
+}
+ 
+.producto{
+    display: none;
+}
+
+article:hover .producto{
+    display: block;
+}
+
+
+.renglon {
+    display: flex;
+    background-color: white;
+    align-items: baseline;
+}
+
+.renglon .precio{
+    width: 30%;
+}
+
+.renglon .descuento{
+    width: 70%;
+}
+
+.titulares{
+    font-size: 24px;
+}
+.precio{
+    font-size: 18px;
+    background-color: white;
+    font-weight: bold;
+}
+.burger-menu {
+    background-color:#03264c;
+    color: #FFFFFF;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.centrar{
+    text-align: center;
+}
+footer i{
+    font-size: 2em;
+    color:blue
+}
+
+footer i:hover{
+    color: yellow;
+}
+
+.articulo i{
+    display: flex;
+    font-size:16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: white;
+    border-radius: 50%;
+    color: #39b54a;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 1s;
+}
+article:hover {
+    box-shadow: 0 0 10px;
+    margin-bottom: 10px;    
+}
+.articulo i:hover{
+    transform: rotate(270deg);
+}
+
+.articulo{
+    position: relative;
+}
+
+.navbar p{
+    background-color: white;
+    text-align: left;
+    width: 150px;
+    height: auto;
+    border: solid 1px black ;
+}
+.navbar i{
+    background-color:white;
+    color: black;
+    max-width: 20px;
+    padding: 2px 2px;
+    border: solid 1px black;
+    text-align: left;
+    font-size: 16px;
+    margin: auto;
+}
+.copy{
+    text-align: left;
+    font-weight: lighter;
+}
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+article{
+    line-height: 1em;
+    padding: 10px;
+    transition: all 1s;
+}
+.articulo{
+    background-color: white;
+    padding: 10px 0 10px 10px;
+}
+.burger-menu i{
+    background-color:#03264c
+}
+section h3{
+    color: rgba(53, 50, 50, 0.623);
+    font-weight: bolder;
+    padding: 0 0 0 10px;
+}
+
+@media(min-width:381px) {
+   .buscador{
+       width: 300px;
+   }
+
+@media(min-width:769px){
+    .main-header-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .texto-header{
+        max-width: 350px;
+        text-align: right;    
+    }
+    .burger-menu{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar i{
+        margin: 0 5px;
+    }
+    .main-header img{
+        width: 250px;
+    }
+
+    .ofertas, .visita{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    article {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (min-width:1220px){
+    .main-header-top,
+    .main-navbar{
+        max-width: 1220px;
+        margin: auto;
+    }
+    .main-navbar{
+        margin-top: 50px;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    .texto-header{
+        max-width: none;
+        font-size: 18px; 
+        font-weight: 400;
+        text-align: right;  
+    }
+    .main-header img{
+        width: 300px;
+    }
+    .ofertas, .visita{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    article {
+        flex-basis: calc(25% - 10px);
+    }
+    .centrar{
+        display: flex;
+    }
+}
+}   
